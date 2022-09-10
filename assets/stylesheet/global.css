@@ -1,0 +1,146 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+body > button {
+  padding: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+body > main {
+  width: 700px;
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.144);
+  border-radius: 5px;
+}
+body > main::before {
+  content: "";
+  width: 110%;
+  height: 1px;
+  position: absolute;
+  left: -5%;
+  top: 324px;
+  z-index: -1;
+  background: #000;
+}
+body > main > div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.3rem;
+}
+body > main > div > span {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  right: 106%;
+  font-size: inherit;
+}
+body > main > #tRex {
+  width: 80px;
+  height: 86px;
+  background: url(../img/t-rex.png);
+  position: absolute;
+  z-index: 1;
+  left: 30px;
+  top: 245px;
+}
+body > main .shake {
+  -webkit-animation: shake 0.2s infinite;
+          animation: shake 0.2s infinite;
+}
+@-webkit-keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+body > main .jump {
+  -webkit-animation: jump 0.8s;
+          animation: jump 0.8s;
+}
+@-webkit-keyframes jump {
+  0% {
+    top: 245px;
+  }
+  50% {
+    top: 160px;
+  }
+  100% {
+    top: 245px;
+  }
+}
+@keyframes jump {
+  0% {
+    top: 245px;
+  }
+  50% {
+    top: 160px;
+  }
+  100% {
+    top: 245px;
+  }
+}
+body > main > #cactus {
+  aspect-ratio: 66/155;
+  width: 30px;
+  position: absolute;
+  top: 260px;
+  left: 705px;
+  background: url(../img/cactus.png);
+  background-size: cover;
+}
+body > main .cactusAnime1 {
+  -webkit-animation: cactus1 1s linear infinite;
+          animation: cactus1 1s linear infinite;
+}
+@-webkit-keyframes cactus1 {
+  to {
+    left: -35px;
+  }
+}
+@keyframes cactus1 {
+  to {
+    left: -35px;
+  }
+}/*# sourceMappingURL=global.css.map */
